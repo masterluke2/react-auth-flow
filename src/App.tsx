@@ -12,11 +12,9 @@ const App: React.FC = () => {
     <AuthProvider>
       <BrowserRouter>
         <Routes>
-          {/* Public routes */}
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
 
-          {/* Setup account page (must be authenticated) */}
           <Route
             path="/setup-account"
             element={
@@ -26,7 +24,6 @@ const App: React.FC = () => {
             }
           />
 
-          {/* Homepage (must be authenticated) */}
           <Route
             path="/"
             element={
@@ -36,7 +33,6 @@ const App: React.FC = () => {
             }
           />
 
-          {/* Fallback */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
