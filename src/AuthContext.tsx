@@ -5,8 +5,8 @@ export interface User {
   password: string;
   firstName?: string;
   lastName?: string;
-  profilePhoto?: string;      // data URL
-  homepageRedirect?: string;  // e.g. "/dashboard" or "https://example.com"
+  profilePhoto?: string;    
+  homepageRedirect?: string; 
 }
 
 export interface ProfileInput {
@@ -34,7 +34,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const register = React.useCallback(
     async (email: string, password: string): Promise<User> => {
-      // Simple demo: only one user stored in localStorage
       const newUser: User = { email, password };
       localStorage.setItem('user', JSON.stringify(newUser));
       setUser(newUser);
