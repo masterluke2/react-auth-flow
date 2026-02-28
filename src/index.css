@@ -35,7 +35,6 @@ body {
   min-height: 100vh;
 }
 
-/* Basic elements */
 
 a {
   color: inherit;
@@ -46,7 +45,6 @@ button {
   font-family: inherit;
 }
 
-/* Auth layout */
 
 .auth-page {
   min-height: 100vh;
@@ -72,7 +70,6 @@ button {
   overflow: hidden;
 }
 
-/* Floating glows */
 
 .auth-glow {
   position: absolute;
@@ -111,7 +108,6 @@ button {
   }
 }
 
-/* Header */
 
 .auth-header {
   position: relative;
@@ -144,7 +140,6 @@ button {
   color: var(--text-muted);
 }
 
-/* Form */
 
 .auth-form {
   margin-top: 1.9rem;
@@ -200,7 +195,6 @@ button {
   color: var(--error);
 }
 
-/* File input styling */
 
 .field-input--file {
   padding: 0.45rem 0.8rem;
@@ -231,7 +225,6 @@ button {
   transform: translateY(0);
 }
 
-/* Buttons & Links */
 
 .primary-button {
   margin-top: 0.3rem;
@@ -284,7 +277,6 @@ button {
   text-decoration: underline;
 }
 
-/* Footer / meta */
 
 .auth-footer {
   margin-top: 1.6rem;
@@ -308,7 +300,6 @@ button {
   font-size: 0.8rem;
 }
 
-/* Avatar / homepage chip for HomePage & setup */
 
 .profile-header {
   display: flex;
@@ -383,7 +374,6 @@ button {
   transform: translateY(0);
 }
 
-/* Small screen tweaks */
 
 @media (max-width: 480px) {
   .auth-card {
